@@ -16,20 +16,16 @@ import json
 import os
 import sys
 from pathlib import Path
+
+'''
 PATH_ROOT = Path(__file__).parents[1]  # Adjust the number if needed
 sys.path.append(str(PATH_ROOT))
-
-from whitepaper.token import token
+from SOURCE_FOLDER.token import token
 # IBMQ.save_account(token, overwrite=False)
 
-# Evaluation of the entropy:
-    # https://pypi.org/project/BiEntropy/
-from bientropy import bien, tbien
-from bitstring import Bits
-
-# Mutual Info
-    # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html
-from sklearn.metrics.cluster import normalized_mutual_info_score
+The first time, you should create an account on IBM-Q: https://www.ibm.com/quantum
+Save your API key inside a folder and file token.py.
+'''
 
 def random_circuit():
     qc = QuantumCircuit(1)

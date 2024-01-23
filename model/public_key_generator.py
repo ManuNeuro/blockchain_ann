@@ -9,7 +9,7 @@ import numpy as np
 import random as rnd
 import json 
 import os
-from whitepaper_p5.model.models_ann import PytorchANN, NeuralNetwork
+from blockchain_ann.model.models_ann import PytorchANN, NeuralNetwork
 
 '''
 [1] Excitatory/inhibitory balance emerges as a key factor for RBN performance, 

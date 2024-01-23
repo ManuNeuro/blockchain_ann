@@ -9,11 +9,10 @@ from pathlib import Path
 PATH_ROOT = Path(__file__).parents[1]  # Adjust the number if needed
 sys.path.append(str(PATH_ROOT))
 
-
-from whitepaper_p5.model.transaction import Transaction
-from whitepaper_p5.model.mining_ann import MiningANN, MiningChain
-from whitepaper_p5.model.blockchain import Blockchain, validate_chain
-from whitepaper_p5.model.wallet import Wallet, WalletPool
+from blockchain_ann.model.transaction import Transaction
+from blockchain_ann.model.mining_ann import MiningANN, MiningChain
+from blockchain_ann.model.blockchain import Blockchain, validate_chain
+from blockchain_ann.model.wallet import Wallet, WalletPool
 
 # Generate fake wallets
 wallets = WalletPool()

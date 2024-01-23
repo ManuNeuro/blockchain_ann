@@ -7,13 +7,11 @@ Created on Sun Jan 21 11:00:16 2024
 
 import sys
 from pathlib import Path
-PATH_ROOT = Path(__file__).parents[1]  # Adjust the number if needed
-sys.path.append(str(PATH_ROOT))
 
 # The model and key generator
-from whitepaper_p5.model.public_key_generator import generate_public_key
-from whitepaper_p5.model.private_key_generator import generate_private_key, fake_private_key
-from whitepaper_p5.model.transaction import Transaction
+from blockchain_ann.model.public_key_generator import generate_public_key
+from blockchain_ann.model.private_key_generator import generate_private_key, fake_private_key
+from blockchain_ann.model.transaction import Transaction
 
 class WalletPool():
     def __init__(self):

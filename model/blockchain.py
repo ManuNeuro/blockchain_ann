@@ -11,8 +11,8 @@ import hashlib
 import importlib.util
 import hashlib
 
-from whitepaper_p5.model.transaction import TransactionPool
-from whitepaper_p5.model.mining_ann import MiningANN
+from blockchain_ann.model.transaction import TransactionPool
+from blockchain_ann.model.mining_ann import MiningANN
 
 copy = lambda obj: pickle.loads(pickle.dumps(obj))
 
