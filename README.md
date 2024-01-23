@@ -18,7 +18,7 @@ The project is divided into several Python files, each serving a specific purpos
 
 4. `transaction.py`: This script manages the transactions in the blockchain. It includes the `Transaction` and `TransactionPool` classes which handle individual transactions and a pool of multiple transactions, respectively.
 
-5. `wallet.py`: This script manages the wallets in the blockchain. It includes the `Wallet` and `WalletPool` classes which handle individual wallets and a pool of multiple wallets, respectively.
+5. `wallet.py`: This script manages the wallets in the blockchain. It includes the `Wallet` and `WalletPool` classes which handle individual wallets and a pool of multiple wallets, respectively. Two important scripts are used, `generate_private_key`, which ca use a quantum computer from IBM to be able to have a **pure source of stochasticity**, and the other, `generate_public_key`, which consist in an artificial neural network designed to be **maximally chaotic** (I'm still running some tests and I'll publish them soon, both in an article and separated repo). 
 
 ## How to Run the Project
 
@@ -82,11 +82,9 @@ Blockchain validation: False
 
 
 
-
-
 ## Contributing
 
-We welcome contributions to this project. Please feel free to open an issue or submit a pull request.
+I welcome contributions to this project. Please feel free to open an issue or submit a pull request.
 
 
 
