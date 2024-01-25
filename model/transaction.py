@@ -8,12 +8,13 @@ Created on Sun Jan 21 10:57:47 2024
 import uuid
 
 class Transaction:
-    # This is a simple example, a real transaction would be more complex
-    def __init__(self, sender, receiver, amount, transaction_id=str(uuid.uuid4())):
+    
+    def __init__(self, sender, receiver, amount, ai_interaction=None, transaction_id=str(uuid.uuid4())):
         self.id = transaction_id
         self.sender = sender
         self.receiver = receiver
         self.amount = amount
+        self.ai_interaction = ai_interaction
     
     def __str__(self):
         return f"{self.sender} -> {self.receiver}: {self.amount}"
@@ -28,6 +29,16 @@ class Transaction:
         else:
             return False
     
+    def ai_interaction_contract(transaction, wallets, rules):
+        """
+        Validate AI interactions in a transaction based on predefined rules.
+        """
+        if transaction.ai_interaction:
+            # Implement logic to validate AI interaction
+            # For example, check if the AI model used is authorized, if the interaction type is allowed, etc.
+            return rules.validate(transaction.ai_interaction)
+        return True
+ 
 class TransactionPool:
     def __init__(self):
         self.transactions = []
