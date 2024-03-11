@@ -41,6 +41,7 @@ class WalletPool():
     
 class Wallet:
     def __init__(self, fake=False):
+        self.version = '1.0.0'
         self.private_key, self.public_key = self.generate_keys(fake)
         self.UTXOs = {}  # UTXOs owned by this wallet
         self.value = 0.0  # Value of UTXOs owned by this wallet
